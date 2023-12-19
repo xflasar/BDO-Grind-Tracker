@@ -53,6 +53,7 @@ exports.GetDatabaseDump = async () => {
 }
 
 // Used to update market item prices
+// use this only when database is populated
 exports.UpdateMarketItemPrices = async () => {
   console.time('DatabaseUpdateMarketItemPrices')
   console.log('Database Market Item Prices Update started.')
