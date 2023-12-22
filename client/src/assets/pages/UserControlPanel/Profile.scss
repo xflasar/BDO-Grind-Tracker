@@ -1,8 +1,8 @@
 .profile-container {
-    background-color: rgba(0,255,0,0.1);
+    position: relative;
     display: flex;
     flex-direction: row;
     width: calc(80% - 20px);
-    min-height: 80dvh;
+    min-height: calc(80dvh - 60px - 70px);
     margin: 1% 0 0 10%;
 }

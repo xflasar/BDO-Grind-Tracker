@@ -50,6 +50,7 @@ const ProfileSecurity = () => {
 
   return (
         <div aria-label='profileSecurity-container' className='profileSecurity-container'>
+            <h2>Profile security</h2>
             <form aria-label='profileSecurity-container-form'>
               <div className='profileSecurity-container-form-inputlabel'>
                 <label htmlFor='password'>Password:</label>

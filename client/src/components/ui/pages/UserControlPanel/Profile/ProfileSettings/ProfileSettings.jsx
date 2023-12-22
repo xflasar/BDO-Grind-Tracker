@@ -98,6 +98,7 @@ const ProfileSettings = () => {
 
   return (
         <div aria-label='profileSettings-container' className='profileSettings-container'>
+            <h2>Profile settings</h2>
             {state.userSettings
               ? (
             <form aria-label='profileSettings-container-form'>
@@ -106,7 +107,7 @@ const ProfileSettings = () => {
                   <div className='delimiter' />
                   <div className='regionLocalization'>
                     <div className='regionLocalization-region'>
-                      <label htmlFor='region'>Region:</label>
+                      <label htmlFor='region'>Region</label>
                       {/* add dropdown menu for region and add localization */}
                       <input type='text' id='region' name='region' placeholder='Region' value={state.regionServer} onChange={handleRegionServerChange} />
                     </div>

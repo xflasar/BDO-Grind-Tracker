@@ -2,11 +2,14 @@ $hoverTextColor: rgb(255, 130, 0);
 
 
 .profile-navigation-container {
-  background-color: #333;
   position: relative;
   width: 25%;
   left: 0;
   border-right: 2px solid rgba(0, 0, 0, 0.33);
+  background-color: #333;
+  height: 15%;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
 
   li {
     list-style-type: none;
@@ -16,13 +19,66 @@ $hoverTextColor: rgb(255, 130, 0);
     cursor: pointer;
     background: transparent;
     border: none;
-    font-size: 18px;
+    font-size: x-large;
+    font-weight: 600;
     margin-right: 1.5%;
     margin-top: 1.5%;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: #f2f2f2;
 
     &:hover {
       color: $hoverTextColor;
     }
+  }
+
+  &.deactivated {
+    width: 0;
+  }
+}
+
+.profileNavigation-ShowHideBtn {
+  position: absolute;
+  margin: 0.5rem;
+
+  button {
+      all: unset;
+      display: block;
+      width: 3vh;
+      height: 3vh;
+
+      .icon-holder {
+        height: 100%;
+
+        &:hover {
+          span {
+            background-color: rgba(255, 166, 0, .2);
+          }
+        }
+
+        span {
+          display: block;
+          width: 100%;
+          height: 15%;
+          background-color: #ffa600;
+  
+          &:not(:last-child){
+            margin-bottom: 0.1rem;
+          }
+  
+          &.close {
+            width: 2vh;
+            height: 2vh;
+            font-size: 2vh;
+            background-color: transparent;
+            color: #ffa600;
+          }
+
+          &:hover {
+            color: rgba(255, 166, 0, .2);
+          }
+        }
+      }
+
+      
   }
 }

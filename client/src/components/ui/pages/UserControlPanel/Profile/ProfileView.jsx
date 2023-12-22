@@ -78,7 +78,8 @@ const ProfileView = () => {
 
   return (
     <div aria-label='profileView-container' className='profileView-container'>
-        {user && (
+      <h2>Profile view</h2>
+      {user && (
       <form aria-label='profileView-container-form'>
         <div className='profileView-container-form-inputlabel'>
           <label htmlFor='username'>Username:</label>
@@ -90,7 +91,7 @@ const ProfileView = () => {
         </div>
         <button id='profileViewUpdateButton' name='profileViewUpdateButton' onClick={handleButtonUpdate}>Update</button>
       </form>
-        )}
+      )}
     </div>
 
   )
